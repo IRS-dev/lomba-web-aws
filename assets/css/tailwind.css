@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -10,7 +11,17 @@
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
+ 
  */
+ #sija{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#D3CCE3, #E9E4F0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* nav active text color ganti  */
+/* background: -webkit-linear-gradient(#005AA7, #2c3e50); */
+ }
 
 html {
   line-height: 1.15; /* 1 */
@@ -1320,7 +1331,7 @@ p {
 
 .navbar-nav .nav-item.active a,
 .navbar-nav .nav-item a:hover {
-  color: black;
+  color: #52aecf;
 }
 
 .navbar-nav .nav-item.active a::before,
@@ -1518,9 +1529,9 @@ p {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  transition-duration: 300ms;
+
   --bg-opacity: 1;
-  background-color:#37a5cc;
+  background-color:#52aecf;
   border-radius: 9999px;
 }
 
@@ -1749,7 +1760,7 @@ p {
       height: 100%;
       --bg-opacity: 0.2;
       /* background-color: #bee3f8; */
-      background: linear-gradient(-45deg, #9976db, #318caa, #2396c0, #5f76e3);
+      background: linear-gradient(-45deg, #6a34ce, #4da3c0, #58cae0, #3853df);
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
       opacity: 100%;
