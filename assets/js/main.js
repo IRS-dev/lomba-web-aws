@@ -1,17 +1,15 @@
 $(function() {
   ("use strict");
 
-  //===== Prealoder
-
-  $(window).on("load", function (event) {
-    $("#preloader").delay(500).fadeOut(500);
-  });
 
   //===== Mobile Menu
 
   $(".navbar-toggler").on("click", function () {
     $(this).toggleClass("active");
     $(".navbar-collapse").toggleClass("show");
+    $(".navbar-nav .nav-item a").removeClass("text-putih");
+    $(".navbar-nav .nav-item a").addClass("text-black");
+    $(".navbar-nav li:nth-child(1)").addClass("active");
   });
 
   $(".navbar-nav a").on("click", function () {
@@ -30,11 +28,15 @@ $(function() {
     if (scroll < 20) {
       $(".navigation").removeClass("fixed");
       $(".navigation").removeClass("bg-white");
+      $(".navigation").removeClass("sija");
       $(".navigation").removeClass("shadow-lg");
     } else {
       $(".navigation").addClass("fixed");
       $(".navigation").addClass("bg-white");
       $(".navigation").addClass("shadow-lg");
+      $(".sija").removeClass("sija-putih");
+      $(".sija").addClass("sija-gradient");
+
       //   $(".navbar-nav .nav-item a").removeClass("text-putih");
     }
 
@@ -46,6 +48,8 @@ $(function() {
     if  (scroll == 0) {
         $(".navbar-nav .nav-item a").addClass("text-putih");
         $(".navbar-nav .nav-item a").removeClass("text-black");
+        $(".sija").removeClass("sija-gradient");
+        $(".sija").addClass("sija-putih");
         
     }
   });
@@ -67,69 +71,13 @@ $(function() {
     });
   });
 
-  //====== Magnific Popup
-
-  $(".video-popup").magnificPopup({
-    type: "iframe",
-    // other options
-  });
-
-  //===== Slick
-
-  $(".testimonial-active").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 800,
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        },
-      },
-    ],
-  });
-
-  //===== Back to top
-
-  // Show or hide the sticky footer button
   $(window).on("scroll", function (event) {
-    if ($(this).scrollTop() > 600) {
-      $(".back-to-top").fadeIn(200);
-    } else {
-      $(".back-to-top").fadeOut(200);
+    var scroll = $(window).scrollTop();
+
+
+    if  (scroll == 0) {
+        $(".nav-item").removeClass("active");
     }
   });
 
-  //Animate the scroll to yop
-  $(".back-to-top").on("click", function (event) {
-    event.preventDefault();
-
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      1500
-    );
-  });
-
-  //=====
 });

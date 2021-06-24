@@ -13,10 +13,20 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  
  */
- #sija{
+ .sija-gradient{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 50px;
   background: -webkit-linear-gradient(#D3CCE3, #E9E4F0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* nav active text color ganti  */
+/* background: -webkit-linear-gradient(#005AA7, #2c3e50); */
+ }
+
+ .sija-putih{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* nav active text color ganti  */
@@ -1276,7 +1286,7 @@ p {
   display: block;
   transition-duration: 300ms;
   --bg-opacity: 1;
-  background-color: #4a5568;
+  background-color: #343A40;
   background-color: rgba(74, 85, 104, var(--bg-opacity));
   height: 2px;
   width: 30px;

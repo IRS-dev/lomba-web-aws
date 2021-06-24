@@ -36,7 +36,7 @@
               <img class="inline" style="width: 50px;" src="assets/images/Logo_SMKN_2_Depok.png"
                 alt="logo sija````````````````````````````````````````````````````````````````">
 
-              <h1 id="sija" class="content-start flex-1">SIJA</h1>
+              <h1 class="sija sija-putih content-start flex-1">SIJA</h1>
 
               <button class="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse"
                 data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +90,7 @@
         </div>
         <div class="w-full lg:w-full xl:w-full">
           <div class="mr-0 pt-40 pb-40  header-content">
-            <img class="mx-auto" style="width: 70%;height:60%;" src="assets/images/sija.png" alt="shape">
+            <img class="mx-auto" src="assets/images/sija.png" alt="shape">
           </div> <!-- header content -->
         </div>
       </div> <!-- row -->
@@ -112,6 +112,13 @@
   </header>
   <!-- APA SIH SIJA ITU? -->
   <section id="pengertian" style="background-color:#E8F1FA;" class="text-gray-600 body-font">
+    <div class="text-center pt-16 ">
+      <h1 class="sm:text-3xl text-4xl font-medium title-font text-gray-900 mb-4">APA ITU SIJA? dan APA <br> KEUNGGULAN
+        DIBANDING JURUSAN LAIN?</h1>
+      <div class="flex mt-6 justify-center">
+        <div class="w-24 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      </div>
+    </div>
     <div x-data="{ selected: 'option-1' }" class="bglg:container md:w-full px-5 py-24 mx-auto flex flex-wrap flex-col">
       <div class="flex mx-auto flex-wrap mb-20">
         <a x-bind:class="{ 'shadow-lg': selected === 'option-1','text-gray-900': selected === 'option-1','bg-gray-100': selected === 'option-1','border-indigo-500': selected === 'option-1', 'rounded-t': selected === 'option-1'}"
@@ -120,7 +127,7 @@
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5 mr-3" viewBox="0 0 24 24">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>Pengertian SIJA
+          </svg>Pengertian
         </a>
         <a x-bind:class="{ 'shadow-lg': selected === 'option-2','text-gray-900': selected === 'option-2','bg-gray-100': selected === 'option-2','border-indigo-500': selected === 'option-2', 'rounded-t': selected === 'option-2'}"
           x-on:click="selected = 'option-2'"
@@ -128,7 +135,7 @@
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5 mr-3" viewBox="0 0 24 24">
             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-          </svg>Keunggulan SIJA
+          </svg>Keunggulan
         </a>
       </div>
       <img x-show="selected === 'option-1'" x-transition:enter="transition ease-out duration-1000"
@@ -586,6 +593,39 @@
     </div>
   </section>
   <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <div class="w-full sm:p-4 px-4 mb-6">
+          <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Visi & Misi SIJA di STEMBAYO</h1>
+          <div class="leading-relaxed">Dengan jurusan SIJA ini diharapkan mampu membekali peserta didik dengan ketrampilan,
+            pengetahuan dan sikap yang luhur agar kompeten dalam dunia kerja baik secara mandiri atau dalam DU/DI sebagai
+            tenaga kerja tingkat menengah yang terampil dalam bidang Teknik Komputer dan Jaringan dan berkarakter sesuai
+            dengan misi dan visi dari SMK Negeri 2 Depok Yogyakarta. Akreditasi untuk program studi teknik komputer dan
+            jaringan adalah A.</div>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">216</h2>
+          <p class="leading-relaxed">Siswa</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">6</h2>
+          <p class="leading-relaxed">Kelas</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">2</h2>
+          <p class="leading-relaxed">Ruang Praktek</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">30+</h2>
+          <p class="leading-relaxed">Komputer</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+        <img class="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats">
+      </div>
+    </div>
+    </section>
+    <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
@@ -597,7 +637,7 @@
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
             <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/600x360">
+              src="assets/images/bu-retna.jpg">
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
