@@ -1,6 +1,4 @@
 <!doctype html>
-<!--ygqdfqewddqfyid-->
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -32,11 +30,10 @@
       <div class="container">
         <div class="row">
           <div class="w-full">
-            <nav class="flex items-center justify-between navbar navbar-expand-lg">
-              <img class="inline" style="width: 38px;" src="assets/images/Logo_SMKN_2_Depok.png"
-                alt="logo sija````````````````````````````````````````````````````````````````">
+            <nav class="flex items-center justify-between navbar navbar-expand-lg">      
+              <img class="inline" style="width: 40px;" src="assets/images/Logo_SMKN_2_Depok.png" alt="logo sija">
 
-              <h1 id="sija" class="content-start flex-1">SIJA</h1>
+              <h3 class="sija sija-putih content-start flex-1">SIJA</h3>
 
               <button class="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse"
                 data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +87,7 @@
         </div>
         <div class="w-full lg:w-full xl:w-full">
           <div class="mr-0 pt-40 pb-40  header-content">
-            <img class="mx-auto" style="width: 70%;height:60%;" src="assets/images/sija.png" alt="shape">
+            <img class="mx-auto" src="assets/images/sija.png" alt="shape">
           </div> <!-- header content -->
         </div>
       </div> <!-- row -->
@@ -112,23 +109,30 @@
   </header>
   <!-- APA SIH SIJA ITU? -->
   <section id="pengertian" style="background-color:#E8F1FA;" class="text-gray-600 body-font">
-    <div x-data="{ selected: 'option-1' }" class="lg:container md:w-full px-5 py-24 mx-auto flex flex-wrap flex-col">
+    <div class="text-center pt-16 ">
+      <h1 class="sm:text-3xl text-4xl font-medium title-font text-gray-900 mb-4">APA ITU SIJA? dan APA <br> KEUNGGULAN
+        DIBANDING JURUSAN LAIN?</h1>
+      <div class="flex mt-6 justify-center">
+        <div class="w-24 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      </div>
+    </div>
+    <div x-data="{ selected: 'option-1' }" class="bglg:container md:w-full px-5 py-24 mx-auto flex flex-wrap flex-col">
       <div class="flex mx-auto flex-wrap mb-20">
-        <a x-bind:class="{ 'text-gray-900': selected === 'option-1','bg-gray-100': selected === 'option-1','border-indigo-500': selected === 'option-1', 'rounded-t': selected === 'option-1'}"
+        <a x-bind:class="{ 'shadow-lg': selected === 'option-1','text-gray-900': selected === 'option-1','bg-gray-100': selected === 'option-1','border-indigo-500': selected === 'option-1', 'rounded-t': selected === 'option-1'}"
           x-on:click="selected = 'option-1'"
-          class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center hover:text-gray-900 sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  tracking-wider ">
-          <svg fill="#52aecf" stroke="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class=" sm:px-6 py-3 w-1/2 sm:w-auto justify-center hover:text-gray-900 sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  tracking-wider ">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5 mr-3" viewBox="0 0 24 24">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>Pengertian SIJA
+          </svg>Pengertian
         </a>
-        <a x-bind:class="{ 'text-gray-900': selected === 'option-2','bg-gray-100': selected === 'option-2','border-indigo-500': selected === 'option-2', 'rounded-t': selected === 'option-2'}"
+        <a x-bind:class="{ 'shadow-lg': selected === 'option-2','text-gray-900': selected === 'option-2','bg-gray-100': selected === 'option-2','border-indigo-500': selected === 'option-2', 'rounded-t': selected === 'option-2'}"
           x-on:click="selected = 'option-2'"
           class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
           <svg fill="none" stroke="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5 mr-3" viewBox="0 0 24 24">
             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-          </svg>Keunggulan SIJA
+          </svg>Keunggulan
         </a>
       </div>
       <img x-show="selected === 'option-1'" x-transition:enter="transition ease-out duration-1000"
@@ -136,7 +140,7 @@
         x-transition:leave="transition ease-in duration-0" x-transition:leave-start="opacity-100 transform scale-100"
         x-transition:leave-end="opacity-0 transform scale-90"
         class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero"
-        src="https://dummyimage.com/720x600">
+        src="assets/images/logosija.jpg">
       <div class="flex flex-col text-center w-full">
         <h1 x-show="selected === 'option-1'" x-transition:enter="transition ease-out duration-1000"
           x-transition:enter-start="opacity-0 transform scale-90"
@@ -240,9 +244,9 @@
           <div class="w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
         </div>
       </div>
-      <div class="lg:flex flex-wrap justify-center sm:block -m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div class="lg:flex flex-wrap justify-center sm:block md:space-y-0">
         <div
-          class="p-4 rounded-lg shadow-xl lg:w-1/3 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
+          class="p-4 mx-4 rounded-lg shadow-xl lg:w-1/4 border-12 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
             <svg stroke="#52aecf" fill="#52aecf" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +315,7 @@
           </div>
         </div>
         <div
-          class="p-4 rounded-lg shadow-xl lg:w-1/3 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
+          class="p-4 my-6  mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
 
@@ -345,7 +349,7 @@
           </div>
         </div>
         <div
-          class="p-4 rounded-lg shadow-xl lg:w-1/3 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
+          class="p-4 my-6 mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
             <svg stroke="#52aecf" fill="#52aecf" viewBox="0 0 64 64" width="65%" xmlns="http://www.w3.org/2000/svg">
@@ -381,7 +385,7 @@
           </div>
         </div>
         <div
-          class="p-4 rounded-lg shadow-xl lg:w-1/3 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
+          class="p-4 my-6 mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
             <svg stroke="#52aecf" fill="#52aecf" height="50px" viewBox="0 0 496 496" width="50px"
@@ -408,64 +412,16 @@
           </div>
         </div>
         <div
-          class="p-4 rounded-lg shadow-xl lg:w-1/3 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
+          class="p-4 mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
             <svg id="Layer_1" enable-background="new 0 0 511.726 511.726" height="60px" viewBox="0 0 511.726 511.726"
               width="60px" stroke="#52aecf" fill="#52aecf" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <path
-                  d="m83.168 98.34c3.233 2.939 7.546 1.884 10.6-.48 2.79-3.05 2.58-7.8-.479-10.59-3.061-2.8-7.8-2.58-10.59.471-2.801 3.059-2.591 7.799.469 10.599z" />
-                <path
-                  d="m58.927 132.59c3.375 2.094 8.234.966 10.33-2.4 2.19-3.52 1.11-8.149-2.399-10.33-3.521-2.189-8.15-1.119-10.33 2.4-2.19 3.52-1.12 8.139 2.399 10.33z" />
-                <path
-                  d="m119.257 72.08c5.723 0 9.499-7.341 5.98-12.021-2.49-3.3-7.2-3.96-10.5-1.47-3.311 2.5-3.971 7.2-1.471 10.51 1.472 1.951 3.722 2.981 5.991 2.981z" />
-                <path
-                  d="m41.418 170.729c3.605 1.377 8.286-.633 9.71-4.279 1.5-3.86-.42-8.21-4.28-9.71-3.859-1.5-8.199.409-9.699 4.279-1.512 3.861.408 8.201 4.269 9.71z" />
-                <path
-                  d="m31.257 211.439c3.711.717 8.063-2.297 8.75-6 .76-4.069-1.92-7.989-5.99-8.739-4.08-.771-7.989 1.92-8.75 5.989-.76 4.071 1.92 7.991 5.99 8.75z" />
-                <path
-                  d="m41.298 320.95c-3.86 1.5-5.78 5.84-4.28 9.699 1.15 2.98 3.98 4.801 6.99 4.801 4.761 0 8.769-5.628 7-10.21-1.501-3.87-5.84-5.79-9.71-4.29z" />
-                <path
-                  d="m33.937 294.97c4.08-.75 6.771-4.67 6.011-8.74-.75-4.069-4.67-6.76-8.74-6.01-4.07.76-6.76 4.67-6.01 8.74.735 4.089 4.763 6.787 8.739 6.01z" />
-                <path
-                  d="m28.778 253.33c9.926-.345 9.928-14.66 0-15-4.141-.011-7.5 3.35-7.5 7.489-.011 4.15 3.35 7.5 7.489 7.511z" />
-                <path
-                  d="m451.717 361.26c-3.49-2.22-8.13-1.18-10.35 2.31-2.22 3.5-1.19 8.131 2.31 10.36 3.767 2.125 7.217 1.355 10.351-2.31 2.22-3.5 1.189-8.13-2.311-10.36z" />
-                <path
-                  d="m446.278 121.979c-3.54 2.141-4.67 6.761-2.521 10.301 2.049 3.384 6.927 4.572 10.311 2.52 3.54-2.15 4.659-6.76 2.52-10.3-2.151-3.54-6.76-4.67-10.31-2.521z" />
-                <path
-                  d="m420.217 89.1c-3.09 2.76-3.35 7.5-.59 10.59 3.448 3.123 6.978 3.32 10.59.591 3.08-2.761 3.351-7.5.59-10.591-2.759-3.081-7.5-3.35-10.59-.59z" />
-                <path
-                  d="m469.597 323.31c-3.85-1.54-8.21.33-9.75 4.17-1.838 4.595 2.163 10.29 6.96 10.29 2.98 0 5.79-1.779 6.971-4.72 1.529-3.84-.341-8.21-4.181-9.74z" />
-                <path
-                  d="m483.028 240.84c-4.15-.04-7.54 3.28-7.58 7.43-.043 4.475 3.654 6.967 7.5 7.57 4.109 0 7.46-3.31 7.5-7.42.04-4.15-3.28-7.54-7.42-7.58z" />
-                <path
-                  d="m468.507 173.6c.88 0 1.771-.149 2.641-.479 3.869-1.46 5.829-5.78 4.38-9.66-3.815-9.177-17.219-4.127-14.04 5.28 1.13 3.009 3.989 4.859 7.019 4.859z" />
-                <path
-                  d="m472.158 207.84c.651 3.702 4.966 6.767 8.68 6.09 4.08-.71 6.811-4.6 6.09-8.68-.71-4.08-4.6-6.811-8.68-6.09-4.08.71-6.811 4.6-6.09 8.68z" />
-                <path
-                  d="m427.158 395.29c-3.03-2.83-7.771-2.66-10.601.37-2.819 3.029-2.649 7.779.38 10.6 3.584 2.798 7.117 2.674 10.601-.37 2.82-3.04 2.66-7.781-.38-10.6z" />
-                <path
-                  d="m480.137 282.689c-4.069-.8-8.01 1.851-8.81 5.91-.822 4.237 3.107 8.95 7.37 8.95 3.51 0 6.649-2.48 7.35-6.05.8-4.069-1.849-8.009-5.91-8.81z" />
-                <path
-                  d="m273.748 464.88v-.01c-4.13.34-7.21 3.949-6.88 8.08.295 3.634 4.333 7.245 8.08 6.88 4.13-.33 7.21-3.95 6.88-8.08-.34-4.13-3.96-7.21-8.08-6.87z" />
-                <path
-                  d="m351.628 443.67c-3.729 1.81-5.28 6.29-3.47 10.02 1.71 3.513 6.518 5.203 10.02 3.471 3.73-1.811 5.28-6.29 3.471-10.021-1.811-3.72-6.291-5.281-10.021-3.47z" />
-                <path
-                  d="m313.677 457.899c-4 1.091-6.359 5.21-5.27 9.21 1.006 3.691 5.542 6.269 9.21 5.271 9.498-2.944 5.73-16.748-3.94-14.481z" />
-                <path
-                  d="m399.097 60.189c-.01 0-.01 0-.01 0-3.27-2.529-7.979-1.92-10.52 1.351-2.53 3.279-1.92 7.99 1.359 10.52 3.692 2.474 7.199 2.025 10.521-1.35 2.53-3.28 1.921-7.99-1.35-10.521z" />
-                <path
-                  d="m386.307 422.67c-3.33 2.46-4.029 7.16-1.569 10.49 3.282 3.436 6.778 3.959 10.489 1.569 3.33-2.46 4.03-7.16 1.57-10.489-2.459-3.33-7.16-4.03-10.49-1.57z" />
-                <path
-                  d="m233.177 464.439v-.01c-4.12-.42-7.8 2.58-8.229 6.7-.407 3.99 3.447 8.27 7.47 8.27 3.8 0 7.06-2.88 7.46-6.739.42-4.12-2.58-7.801-6.701-8.221z" />
-                <path
-                  d="m392.245 247.435c0-8.677-3.784-16.486-9.788-21.866 12.85-11.54 12.867-32.292 0-43.822 12.848-11.538 12.868-32.286.005-43.817 18.308-16.413 8.685-47.977-15.866-51.089v-56.776c0-16.578-13.487-30.065-30.064-30.065h-95.03c-9.697 0-9.697 15 0 15h95.03c8.307 0 15.064 6.759 15.064 15.065v3.969h-185.18v-3.969c0-8.308 6.759-15.065 15.065-15.065h19.036c9.697 0 9.697-15 0-15h-19.036c-16.578 0-30.065 13.487-30.065 30.065v109.794c-20.418-13.013-48.011 2.373-48.011 26.521v175.869l-14.043 14.107c-15.256-7.126-34.114-3.72-45.973 8.194-15.834 15.905-15.834 41.785 0 57.69l46.421 46.634c6.841 6.873 17.471-3.709 10.631-10.582l-46.421-46.634c-10.025-10.07-10.025-26.456 0-36.526 9.864-9.909 26.536-9.855 36.345 0l77.425 77.779c10.023 10.07 10.023 26.456 0 36.526-11.462 11.515-29.283 8.875-39.283-2.951-6.842-6.874-17.471 3.71-10.631 10.582 35.741 37.784 92.421-4.347 65.499-48.708l13.512-13.574c40.589 3.097 79.999-19.31 98.205-55.747h41.44c16.577 0 30.064-13.487 30.064-30.065v-72.313c14.444-1.831 25.649-14.203 25.649-29.226zm-15 .099c0 7.919-6.442 14.361-14.361 14.361h-13.095c-19.07-.795-19.068-28.029 0-28.822h13.095c7.918 0 14.361 6.443 14.361 14.461zm0-43.822c0 7.919-6.442 14.361-14.361 14.361h-13.095c-19.07-.795-19.068-28.029 0-28.822h13.095c7.918 0 14.361 6.442 14.361 14.461zm0-43.822c0 7.919-6.442 14.361-14.361 14.361h-13.095c-19.07-.795-19.068-28.029 0-28.822h13.095c7.918 0 14.361 6.442 14.361 14.461zm0-43.923c-.255 7.677-6.427 14.462-14.361 14.462h-13.095c-19.069-.794-19.068-28.029 0-28.822h13.095c7.918-.001 14.361 6.442 14.361 14.36zm-25.649-66.933v37.572c-27.913-1.369-41.896 32.834-21.386 51.322-12.973 11.262-12.968 32.565 0 43.822-12.973 11.262-12.968 32.565 0 43.822-20.518 18.502-6.511 52.692 21.386 51.322v37.572h-142.212c-4.749-25.583-19.496-49.612-42.968-61.863v-203.569zm-146.827 371.104-10.504-.489c-2.101-.084-4.172.701-5.664 2.201l-15.283 15.353-71.634-71.962 14.537-14.604c1.399-1.405 2.185-3.308 2.185-5.291v-178.966c0-21.125 32.57-21.125 32.57 0v90.744c0 2.99 1.776 5.695 4.521 6.883 17.869 7.732 31.09 23.744 37.227 45.086 6.922 24.074 3.23 50.65-9.635 69.358-5.337 7.76 6.625 16.838 12.359 8.5 1.737-2.526 3.334-5.169 4.79-7.911h77.721c-15.605 25.506-42.92 41.04-73.19 41.098zm131.763-56.098h-130.031c3.453-10.916 5.01-22.717 4.552-34.572h140.543v19.507c0 8.306-6.757 15.065-15.064 15.065z" />
-                <path
-                  d="m187.845 105.867c3.554 2.883 7.089 2.837 10.605-.139l21.953-22.534c6.767-6.945-3.979-17.415-10.744-10.467l-21.953 22.534c-2.89 2.968-2.827 7.716.139 10.606z" />
-                <path
-                  d="m187.845 154.088c3.554 2.883 7.089 2.837 10.605-.139l68.929-70.755c6.767-6.945-3.979-17.415-10.744-10.467l-68.929 70.755c-2.89 2.967-2.827 7.715.139 10.606z" />
+                  d="m447.183 66.584h-6.075c11.58-18.853 7.304-44.164-11.281-57.953-20.025-14.856-48.482-10.074-62.457 10.81l-31.546 47.144h-270.997c-22.275 0-40.397 18.122-40.397 40.397v258.274c0 22.275 18.122 40.397 40.397 40.397h156.914l-11.856 49.797h-25.589c-16.677 0-30.245 13.567-30.245 30.244v6.315h-31.545c-5.523 0-10 4.478-10 10s4.477 10 10 10h266.999c5.523 0 10-4.478 10-10s-4.477-10-10-10h-31.545v-6.315c0-16.677-13.568-30.244-30.245-30.244h-25.589l-11.856-49.797h156.914c22.275 0 40.397-18.122 40.397-40.397v-56.83-201.445c0-22.275-18.122-40.397-40.398-40.397zm-143.282 175.799c-15.635 10.945-44.926-3.932-72.898 10.994-6.825-35.455-2.522-68.8 33.003-76.16 4.591-.957 9.534-1.39 13.742-1.306 12.024 8.921 24.186 17.944 36.176 26.841 5.249 15.268 3.279 30.32-10.023 39.631zm10.078-107.188 28.307 21.002-21.769 26.541c-8.962-6.649-16.666-12.365-25.628-19.015 1.861-2.781 17.389-25.987 19.09-28.528zm70.014-104.631c7.574-11.321 23.021-13.955 33.917-5.87 10.9 8.086 12.852 23.632 4.215 34.163-15.325 18.683-51.759 63.104-67.142 81.859l-29.87-22.162zm-46.034 455.13v6.315h-163.908v-6.315c0-5.648 4.596-10.244 10.245-10.244h143.418c5.649 0 10.245 4.596 10.245 10.244zm-56.393-30.244h-51.122l11.856-49.797h27.41zm186.015-90.194c0 11.247-9.15 20.397-20.397 20.397-15.874 0-364.508 0-382.356 0-11.247 0-20.397-9.15-20.397-20.397v-46.83h28.576c5.523 0 10-4.478 10-10s-4.477-10-10-10h-28.578v-191.445c0-11.247 9.15-20.397 20.397-20.397h257.615c-9.58 14.317-37.529 56.085-46.382 69.314-19.597.177-39.162 7.004-51.97 21.956-17.429 20.345-20.491 52.313-9.101 95.015 1.947 7.302 11.058 9.918 16.571 4.652 25.857-24.707 58.061 2.243 86.9-21.099 17.604-14.25 21.77-36.904 15.132-58.088 8.973-10.94 82.664-100.784 91.658-111.75h21.933c11.247 0 20.397 9.15 20.397 20.397v191.444h-314.574c-5.523 0-10 4.478-10 10s4.477 10 10 10h314.576z" />
+                <path d="m111.075 298.619c-4.814.984-8.04 5.145-8.04 9.811 0 6.255 5.719 11.045 11.95 9.8 5.537-1.124
+                  8.91-6.46 7.85-11.76-1.113-5.47-6.419-8.926-11.76-7.851z" />
               </g>
             </svg>
           </div>
@@ -484,9 +440,10 @@
       </div>
     </div>
     </div>
-  </section> <!-- YANG DIPELAJARI -->
+  </section>
+  <!-- YANG DIPELAJARI -->
 
-  <section id="prospek" class="mt-10 text-gray-600 body-font">
+  <section id="prospek" style="background-color: #F1F4F8;" class=" mt-10 text-gray-600 body-font">
     <div class="text-center mb-10">
       <h1 class="sm:text-3xl text-4xl font-medium title-font text-gray-900 mb-4">Prospek Kerja
       </h1>
@@ -633,90 +590,113 @@
     </div>
   </section>
   <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <div class="w-full sm:p-4 px-4 mb-6">
+          <h1 class="title-font font-medium text-2xl mb-2 text-gray-900">Visi & Misi SIJA di STEMBAYO</h1>
+          <div class="leading-relaxed">Dengan jurusan SIJA ini diharapkan mampu membekali peserta didik dengan
+            ketrampilan,
+            pengetahuan dan sikap yang luhur agar kompeten dalam dunia kerja baik secara mandiri atau dalam DU/DI
+            sebagai
+            tenaga kerja tingkat menengah yang terampil dalam bidang Teknik Komputer dan Jaringan dan berkarakter sesuai
+            dengan misi dan visi dari SMK Negeri 2 Depok Yogyakarta. Akreditasi untuk program studi teknik komputer dan
+            jaringan adalah A.</div>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">216</h2>
+          <p class="leading-relaxed">Siswa</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">6</h2>
+          <p class="leading-relaxed">Kelas</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">2</h2>
+          <p class="leading-relaxed">Ruang Praktek</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">30+</h2>
+          <p class="leading-relaxed">Komputer</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+        <img class="mx-auto object-cover object-center w-2/3 h-2/3" src="assets/images/Logo_SMKN_2_Depok.png" alt="logo sija">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Galeri</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
-          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
-          jianbing selfies heirloom.</p>
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table.</p>
       </div>
       <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/600x360">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/601x361">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-16 h-16 mx-auto items-center rounded-full mb-4">
+              <img class="rounded-full" style="width:100%;" src="assets/images/bu-retna.jpg" alt="">
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/603x363">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-16 h-16 mx-auto items-center rounded-full mb-4">
+        
+              <img class="rounded-full" src="assets/images/kjd.jpg" alt="">
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/602x362">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+              </svg>
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/605x365">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/606x366">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled
-                waistcoat.</p>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
             </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
           </div>
         </div>
       </div>
@@ -981,7 +961,6 @@
   </footer>
 
   <!-- jquery -->
-  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
   <script src="assets/js/jquery.fancybox.min.js"></script>
   <!-- main js -->
