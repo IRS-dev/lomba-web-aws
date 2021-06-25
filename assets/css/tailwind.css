@@ -256,11 +256,21 @@ video {
   background-color: #2a4365;
   background-color: rgba(42, 67, 101, var(--bg-opacity));
 }
+.bg-blue-me{
+  --bg-opacity:1;
+  background-color: #52aecf;
+  border-color: rgba(82,174,207,1),var(--bg-opacity);
+}
 
 .hover\:bg-blue-500:hover {
   --bg-opacity: 1;
   background-color: #4299e1;
   background-color: rgba(66, 153, 225, var(--bg-opacity));
+}
+.border-blue-me{
+  --border-opacity:1;
+  background-color: #52aecf;
+  border-color: rgba(82,174,207,1),var(--bg-opacity);
 }
 
 .border-gray-200 {
