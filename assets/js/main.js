@@ -1,22 +1,17 @@
-$(function() {
+$(function () {
   ("use strict");
 
-
-  //===== Mobile Menu
-
+  // navigasi mobile
   $(".navbar-toggler").on("click", function () {
     $(this).toggleClass("active");
     $(".navbar-collapse").toggleClass("show");
     $(".navbar-nav .nav-item a").removeClass("text-putih");
     $(".navbar-nav .nav-item a").addClass("text-black");
-    $(".navbar-nav li:nth-child(1)").addClass("active");
   });
 
   $(".navbar-nav a").on("click", function () {
     $(".navbar-toggler").removeClass("active");
   });
-
-  //===== close navbar-collapse when a  clicked
 
   $(".navbar-nav a").on("click", function () {
     $(".navbar-collapse").removeClass("show");
@@ -36,28 +31,23 @@ $(function() {
       $(".navigation").addClass("shadow-lg");
       $(".sija").removeClass("sija-putih");
       $(".sija").addClass("sija-gradient");
-
-      //   $(".navbar-nav .nav-item a").removeClass("text-putih");
     }
 
-    if  (scroll > 1) {
-        $(".navbar-nav .nav-item a").removeClass("text-putih");
-        $(".navbar-nav .nav-item a").addClass("text-black"); 
+    if (scroll > 1) {
+      $(".navbar-nav .nav-item a").removeClass("text-putih");
+      $(".navbar-nav .nav-item a").addClass("text-black");
     }
 
-    if  (scroll == 0) {
-        $(".navbar-nav .nav-item a").addClass("text-putih");
-        $(".navbar-nav .nav-item a").removeClass("text-black");
-        $(".sija").removeClass("sija-gradient");
-        $(".sija").addClass("sija-putih");
-        
+    if (scroll == 0) {
+      $(".navbar-nav .nav-item a").addClass("text-putih");
+      $(".navbar-nav .nav-item a").removeClass("text-black");
+      $(".sija").removeClass("sija-gradient");
+      $(".sija").addClass("sija-putih");
     }
   });
 
-  //===== Section Menu Active
-
+  // menu active
   var scrollLink = $(".page-scroll");
-  // Active link switching
   $(window).scroll(function () {
     var scrollbarLocation = $(this).scrollTop();
 
@@ -74,10 +64,8 @@ $(function() {
   $(window).on("scroll", function (event) {
     var scroll = $(window).scrollTop();
 
-
-    if  (scroll == 0) {
-        $(".nav-item").removeClass("active");
+    if (scroll == 0) {
+      $(".nav-item").removeClass("active");
     }
   });
-
 });
