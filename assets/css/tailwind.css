@@ -946,6 +946,9 @@ p {
   color: black;
 }
 
+.border-biru{
+  border-color: #15acdf;
+}
 
 .navbar-nav .nav-item.active a,
 .navbar-nav .nav-item a:hover {
