@@ -41,7 +41,7 @@ $(function () {
     if (scroll == 0) {
       $(".navbar-nav .nav-item a").addClass("text-putih");
       $(".navbar-nav .nav-item a").removeClass("text-black");
-      $(".sija").removeClass("sija-gradient");
+      $(".sija").removeClass("juduls-gradient");
       $(".sija").addClass("sija-putih");
     }
   });

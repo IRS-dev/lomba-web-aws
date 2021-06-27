@@ -1085,9 +1085,10 @@ p {
   color: rgba(255, 255, 255, var(--text-opacity));
 
   --bg-opacity: 1;
-  background-color:#52aecf;
+  background-color:#30c4fa;
   border-radius: 9999px;
 }
+
 
 .main-btn:hover {
   --bg-opacity: 1;
