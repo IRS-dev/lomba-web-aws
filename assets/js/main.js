@@ -42,7 +42,7 @@ $(function () {
       $(".navigation").addClass("bg-white");
       $(".navigation").addClass("shadow-lg");
       $(".sija").removeClass("sija-putih");
-      $(".sija").addClass("sija-gradient");
+      $(".sija").addClass("juduls-gradient");
     }
 
     if (scroll > 1) {

@@ -37,6 +37,14 @@
   -webkit-text-fill-color: transparent;
  }
 
+ .juduls-gradient{
+  background: -webkit-linear-gradient(#0e86d1, #49bcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+ }
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
