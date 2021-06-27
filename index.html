@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css">
   <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
 
+  <!-- transition -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -45,7 +48,6 @@
                 <span class="toggler-icon"></span>
               </button>
 
-              <!-- justify-center hidden md:flex collapse navbar-collapse sub-menu-bar -->
               <div
                 class="absolute left-0 z-30 hidden w-full px-1 duration-300 bg-white shadow md:opacity-100 md:w-auto collapse navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none"
                 id="navbarOne">
@@ -75,15 +77,18 @@
 
     <div id="home" class="relative z-10 header-hero">
       <div class="lg:grid grid-cols-2 gap-0 md:block container">
-        <div class="w-full lg:w-full xl:w-full">
-          <div class="pt-40 pb-36 header-content">
-            <h1 class="mt-8 mb-5 text-3xl font-medium leading-tight md:text-5xl text-white">Mari Mengenal SIJA Lebih
-              Dekat!!
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-center"
+          class="w-full lg:w-full xl:w-full">
+          <div class="pt-40 md:pt-40 pb-36 header-content">
+            <h1 class="mt-8 mb-5 text-4xl font-semibold leading-tight md:text-5xl text-white">Mari Mengenal Jurusan SIJA
+              Lebih
+              Dekat
             </h1>
-            <h3 class=" text-xm text-white text-opacity-75">Apa itu SIJA? Apa yang dipelajari di jurusan ini?
+            <h3 class=" text-xm text-white text-opacity-80">Apa itu SIJA? apa yang dipelajari di jurusan ini?
             </h3>
-            <h3 class="text-xm text-white text-opacity-75"> Apakah menguntungkan masuk SIJA? </h3>
-            <h3 class="mb-10 text-xm text-white text-opacity-75 ">Itu semua akan dibahas disini.
+            <h3 class="text-xm text-white text-opacity-80"> Apakah menguntungkan masuk SIJA? </h3>
+            <h3 class="mb-10 text-xm text-white text-opacity-80 ">Itu semua akan dibahas disini.
             </h3>
             <ul class="flex flex-wrap justify-content-start">
               <li><a data-fancybox href="assets/video/sija_stembayo.mp4" class="mx-3 main-btn shadow-2xl"
@@ -94,8 +99,10 @@
             </ul>
           </div> <!-- header content -->
         </div>
-        <div class="w-full lg:w-full xl:w-full">
-          <div class="mr-0 pt-40 pb-40  header-content">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="10" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="header-content"
+          class="w-full lg:w-full xl:w-full">
+          <div class="mr-0 pt-20 pb-40 md:pt-40 header-content">
             <img class="mx-auto" src="assets/images/sija.png" alt="shape">
           </div> <!-- header content -->
         </div>
@@ -117,19 +124,24 @@
     </div> <!-- header content -->
   </header>
   <!-- APA SIH SIJA ITU? -->
-  <section id="pengertian" style="background-color:#E8F1FA;" class="body-font">
-    <div class="text-center pt-16 ">
-      <h1 class="sm:text-3xl text-4xl font-medium title-font judul-gradient mb-4">TENTANG SIJA</h1>
+  <section d="pengertian" style="background-color:#E8F1FA;" class="text-gray-600 body-font">
+  
+    <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="10" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="h1ku"
+      class="text-center pt-16 ">
+      <h1 class="h1ku sm:text-4xl text-4xl font-semibold title-font text-gray-900 mb-4">APA ITU JURUSAN SIJA?</h1>
       <div class="flex mt-6 justify-center">
         <div class="w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
       </div>
     </div>
-    <div x-data="{ selected: 'option-1' }" class="bglg:container md:w-full px-5 py-24 mx-auto flex flex-wrap flex-col">
+    <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="10" data-aos-duration="1000" data-aos-easing="ease-in-out"
+      data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="kola" x-data="{ selected: 'option-1' }"
+      class="kola lg:container md:w-full px-5 py-24 mx-auto flex flex-wrap flex-col">
       <div class="flex mx-auto flex-wrap mb-20 ">
         <a x-bind:class="{ 'shadow-lg': selected === 'option-1','text-gray-900': selected === 'option-1','bg-gray-100': selected === 'option-1','border-indigo-500': selected === 'option-1', 'rounded-t': selected === 'option-1'}"
           x-on:click="selected = 'option-1'"
-          class=" sm:px-6 py-3 w-1/2 sm:w-auto justify-center hover:text-gray-900 sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  tracking-wider ">
-          <svg height="25px" stroke="#52aecf" fill="#52aecf" viewBox="0 0 512 512" width="25px"
+          class="px-6 sm:px-6 py-3 w-1/2 sm:w-auto justify-center hover:text-gray-900 sm:justify-start border-b-2 title-font font-medium  inline-flex items-center leading-none  tracking-wider ">
+          <svg class="mr-2" height="25px" stroke="#52aecf" fill="#52aecf" viewBox="0 0 512 512" width="25px"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="m175.546875 384.304688c17.941406-14.894532 29.386719-37.359376 29.386719-62.445313 0-44.742187-36.394532-81.140625-81.125-81.140625-44.734375 0-81.128906 36.398438-81.128906 81.140625 0 25.085937 11.445312 47.546875 29.386718 62.445313-40.449218 18.617187-69.34375 58.398437-72.0312498 105.527343-.3281252 5.714844 1.7460938 11.386719 5.6874998 15.558594 3.964844 4.203125 9.554688 6.609375 15.332032 6.609375h205.507812c5.773438 0 11.363281-2.40625 15.328125-6.609375 3.945313-4.171875 6.015625-9.84375 5.691406-15.558594-2.691406-47.128906-31.582031-86.910156-72.035156-105.527343zm-102.867187-62.445313c0-28.199219 22.9375-51.140625 51.128906-51.140625s51.125 22.941406 51.125 51.140625-22.933594 51.140625-51.125 51.140625-51.128906-22.941406-51.128906-51.140625zm-41.664063 160.140625c7.203125-45 46.253906-79 92.792969-79 46.539062 0 85.59375 33.996094 92.789062 79zm0 0" />
@@ -143,9 +155,9 @@
         </a>
         <a x-bind:class="{ 'shadow-lg': selected === 'option-2','text-gray-900': selected === 'option-2','bg-gray-100': selected === 'option-2','border-indigo-500': selected === 'option-2', 'rounded-t': selected === 'option-2'}"
           x-on:click="selected = 'option-2'"
-          class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
-          <svg stroke="#52aecf" fill="#52aecf" id="Capa_1" enable-background="new 0 0 512.166 512.166" height="25px"
-            viewBox="0 0 512.166 512.166" width="25px" xmlns="http://www.w3.org/2000/svg">
+          class="px-6 sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-100 hover:text-gray-900 tracking-wider">
+          <svg class="mr-2" stroke="#52aecf" fill="#52aecf" id="Capa_1" enable-background="new 0 0 512.166 512.166"
+            height="25px" viewBox="0 0 512.166 512.166" width="25px" xmlns="http://www.w3.org/2000/svg">
             <g>
               <path
                 d="m500.364 224.14c10.597-10.329 14.339-25.489 9.766-39.564-4.573-14.074-16.512-24.139-31.156-26.267l-117.824-17.121c-7.687-1.117-14.328-5.942-17.766-12.907l-19.159-38.82c-1.833-3.715-6.329-5.24-10.045-3.406-3.714 1.833-5.239 6.33-3.406 10.045l19.159 38.82c5.623 11.393 16.487 19.285 29.06 21.112l117.824 17.121c9.089 1.321 16.209 7.324 19.047 16.059 2.838 8.734.606 17.777-5.97 24.188l-85.258 83.105c-9.098 8.869-13.248 21.64-11.1 34.162l20.126 117.348c1.553 9.052-1.957 17.679-9.386 23.077-7.431 5.398-16.72 6.071-24.849 1.796l-18.978-9.977v-12.186c0-12.232-9.952-22.185-22.185-22.185h-4.327v-33.56c.002-6.21 4.102-15.929 8.602-20.39 20.012-19.839 30.627-36.696 29.42-68.905-.94-25.07-5.453-47.635-10.604-67.366v-19.978c0-15.304-12.451-27.754-27.754-27.754-4.627 0-8.99 1.144-12.83 3.155-1.525-15.319-14.486-27.322-30.2-27.322-6.845 0-13.167 2.28-18.25 6.118-4.978-9.978-15.285-16.851-27.173-16.851-12.097 0-22.561 7.116-27.434 17.38-5.193-4.154-11.771-6.647-18.923-6.647-16.736 0-30.352 13.615-30.352 30.352v46.898c-1.406.873-2.756 1.846-4.029 2.927-10.993 9.341-18.884 26.741-21.565 38.955-1.845 8.405-2.765 16.616-2.736 24.404.119 31.643 16.459 53.817 32.427 71.336 1.228 1.347 1.904 3.078 1.904 4.874v42.373h-.543c-12.232 0-22.185 9.952-22.185 22.185v12.187l-18.975 9.976c-8.129 4.275-17.418 3.603-24.849-1.796-7.43-5.398-10.939-14.025-9.386-23.077l20.126-117.348c2.148-12.522-2.002-25.293-11.1-34.162l-85.257-83.104c-6.577-6.411-8.809-15.454-5.971-24.188s9.958-14.737 19.047-16.059l117.824-17.121c12.573-1.827 23.437-9.72 29.06-21.112l52.692-106.767c4.066-8.237 11.976-13.153 21.16-13.153s17.094 4.916 21.157 13.149l18.2 36.917c1.832 3.715 6.328 5.245 10.043 3.41 3.715-1.831 5.242-6.328 3.411-10.043l-18.201-36.92c-6.55-13.27-19.811-21.513-34.61-21.513s-28.06 8.243-34.609 21.514l-52.693 106.766c-3.438 6.965-10.079 11.79-17.766 12.907l-117.823 17.122c-14.645 2.128-26.583 12.192-31.156 26.267s-.831 29.235 9.767 39.565l85.258 83.105c5.562 5.421 8.099 13.229 6.786 20.885l-20.128 117.348c-2.502 14.585 3.381 29.049 15.354 37.748 11.972 8.698 27.547 9.824 40.646 2.938l11.995-6.306v10.124c0 12.232 9.952 22.185 22.185 22.185h31.685c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-31.685c-3.961 0-7.185-3.223-7.185-7.185v-39.258c0-3.962 3.223-7.185 7.185-7.185h164.367c3.961 0 7.185 3.223 7.185 7.185v39.258c0 3.962-3.223 7.185-7.185 7.185h-98.016c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h98.016c12.232 0 22.185-9.952 22.185-22.185v-10.125l11.998 6.308c5.698 2.995 11.862 4.475 17.997 4.475 7.968-.001 15.885-2.498 22.649-7.412 11.973-8.699 17.856-23.163 15.354-37.748l-20.129-117.35c-1.313-7.656 1.224-15.464 6.786-20.885zm-179.441-7.165c.684-6.392 6.107-11.388 12.678-11.388 7.033 0 12.754 5.722 12.754 12.754v46.831c0 7.032-5.722 12.754-12.754 12.754s-12.754-5.722-12.754-12.754zm-45.423-23.083c1.353-7.092 7.592-12.472 15.071-12.472 8.465 0 15.352 6.887 15.352 15.352l-.076 54.331c-.754 7.766-7.315 13.858-15.276 13.858-2.77 0-5.358-.756-7.601-2.049.882-3.729 1.1-7.744.613-12.047-.568-5.027-3.769-9.153-8.118-11.083.009-.304.035-45.89.035-45.89zm-45.704-7.854c0-8.465 6.887-15.352 15.352-15.352s15.352 6.887 15.352 15.352l-.28 52.559h-30.423v-52.559zm-46.357 10.733c0-8.465 6.887-15.352 15.352-15.352s15.352 6.887 15.352 15.352v41.825h-27.951c-.922 0-1.839.042-2.752.117v-41.942zm135.499 198.208v33.561h-129.497s0-41.569 0-42.373c0-5.543-2.066-10.863-5.818-14.979-14.044-15.406-28.414-34.736-28.513-61.287-.025-6.689.778-13.8 2.387-21.133 2.172-9.898 8.738-24.036 16.624-30.737 3.368-2.858 7.655-4.433 12.072-4.433h82.585c.502 6.703-1.744 11.377-7.381 15.484-12.349 8.997-32.277 6.738-42.983 5.526-1.708-.194-3.184-.361-4.433-.46-5.263-.426-11.198.628-13.694 5.857-1.68 3.52-1.245 7.626 1.138 10.72 2.803 3.64 6.817 5.67 10.044 8.795 2.389 2.314 4.372 5.095 6.073 7.94 4.677 7.821 7.272 17.086 6.178 26.217-.493 4.112 2.442 7.846 6.555 8.339 4.108.493 7.847-2.442 8.338-6.556 2.304-19.242-6.99-36.334-15.296-45.262 12.934 1.153 32.583 1.446 46.913-8.995 2.146-1.563 4.024-3.251 5.665-5.048 4.353 2.417 9.355 3.804 14.677 3.804 6.286 0 12.132-1.921 16.982-5.207 3.91 10.596 14.11 18.173 26.048 18.173 8.587 0 16.275-3.921 21.37-10.065.983 7.538 1.697 15.329 2 23.388.912 24.32-4.927 37.8-24.991 57.69-7.311 7.247-13.04 20.879-13.043 31.041z" />
@@ -165,20 +177,26 @@
           x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-0"
           x-transition:leave-start="opacity-100 transform scale-100"
           x-transition:leave-end="opacity-0 transform scale-90"
-          class="text-xl font-medium title-font mb-4 text-gray-900
+          class="text-2xl font-medium title-font mb-4 text-gray-900
                                                                                                                                                                                                                                                                                                                                     ">
-          Apa itu SIJA?</h1>
+          Pengertian SIJA</h1>
         <p x-show="selected === 'option-1'" x-transition:enter="transition ease-out duration-1000"
           x-transition:enter-start="opacity-0 transform scale-90"
           x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-0"
           x-transition:leave-start="opacity-100 transform scale-100"
-          x-transition:leave-end="opacity-0 transform scale-90"
-          class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
+          x-transition:leave-end="opacity-0 transform scale-90" class="lg:w-2/3 mx-auto leading-relaxed text-lg">
           Sistem Informatika, Jaringan, dan Aplikasi (SIJA) merupakan kompetensi keahlian baru berbasis Teknologi
           Informasi dan Komunikasi pada program keahlian Teknik Komputer dan Informatika yang mulai dibuka pada Tahun
           Pelajaran 2017/2018 untuk program pendidikan SMK dengan pembelajaran Empat (4) Tahun.</p>
       </div>
       <div class="flex flex-col text-start w-full">
+        <h1 x-show="selected === 'option-2'" x-transition:enter="transition ease-out duration-1000"
+          x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100"
+          x-transition:leave="transition ease-in duration-0" x-transition:leave-start="opacity-100 transform scale-100"
+          x-transition:leave-end="opacity-0 transform scale-90"
+          class="text-2xl text-center font-medium title-font mb-4 text-gray-900
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ">
+          Keunggulan Jurusan SIJA</h1>
         <div x-show="selected === 'option-2'" x-transition:enter="transition ease-out duration-1000"
           x-transition:enter-start="opacity-0 transform scale-90"
           x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-0"
@@ -251,19 +269,23 @@
     </div>
   </section>
   <!-- YANG DIPELAJARI -->
-  <section id="pembelajaran" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="text-center mb-20">
-        <h1 class="sm:text-3xl text-4xl font-medium title-font judul-gradient mb-4">APA SIH YANG DIPELAJARI?</h1>
+  <section id="pembelajaran" class="iw text-gray-600 body-font">
+    <div class=" container px-5 py-24 mx-auto">
+      <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="10" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="kolaa"
+        class="text-center mb-20 kolaa">
+        <h1 class="sm:text-3xl text-4xl font-semibold title-font text-gray-900 mb-4">APA SIH YANG DIPELAJARI?</h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Ada banyak hal yang dipelajari di
           jurusan SIJA, tentunya pasti berkaitan dengan IT ya.. yuk simak penjelasanya dibawah ini.
         </p>
         <div class="flex mt-6 justify-center">
-          <div class="w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
+          <div class="ww w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
         </div>
       </div>
-      <div class="lg:flex flex-wrap justify-center sm:block md:space-y-0">
-        <div style="border-width: 3px;border-color:#01ABE4;"
+      <div data-aos="fade-down" data-aos-offset="50" data-aos-delay="10" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="ww"
+        class="lg:flex flex-wrap justify-center sm:block md:space-y-0">
+        <div style="border-width: 2px;border-color:#01ABE4;"
           class="p-4 mx-4 rounded-lg shadow-2xl lg:w-1/4 border-12 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -326,7 +348,7 @@
               Pemrograman ini difokuskan ke materi
               dasar-dasar Algoritma pemrograman, flowchart, dan logika
               pemrograman.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a target=”_blank” class="mt-3 text-indigo-500 inline-flex items-center"
               href="https://id.wikipedia.org/wiki/Pemrograman">Selengkapnya
               <svg stroke="#52aecf" fill="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -335,7 +357,7 @@
             </a>
           </div>
         </div>
-        <div style="border-width: 3px;border-color:#01ABE4;"
+        <div style="border-width: 2px;border-color:#01ABE4;"
           class="p-4 my-6  mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -361,7 +383,7 @@
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3">DESAIN GRAFIS</h2>
             <p class="leading-relaxed text-base">Desain grafis adalah suatu bentuk komunikasi visual yang menggunakan
               gambar untuk menyampaikan informasi atau pesan seefektif mungkin.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a target=”_blank” class="mt-3 text-indigo-500 inline-flex items-center"
               href="https://id.wikipedia.org/wiki/Desain_grafis">Selengkapnya
               <svg stroke="#52aecf" fill="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -370,7 +392,7 @@
             </a>
           </div>
         </div>
-        <div style="border-width: 3px;border-color:#01ABE4;"
+        <div style="border-width: 2px;border-color:#01ABE4;"
           class="p-4 my-6 mx-4 rounded-lg shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -399,7 +421,7 @@
             <p class="leading-relaxed text-base">Secara umum, materi ini meliputi keahlian yang berhubungan dengan
               materi Komputer dan
               Jaringan Dasar adalah menjadi Teknisi jaringan Komputer.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a target=”_blank” class="mt-3 text-indigo-500 inline-flex items-center"
               href="https://id.wikipedia.org/wiki/Teknik_komputer_dan_jaringan">Selengkapnya
               <svg stroke="#52aecf" fill="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -408,7 +430,8 @@
             </a>
           </div>
         </div>
-        <div style="margin-top:32px; border-width: 3px;border-color:#01ABE4;" class="p-4 mx-4 rounded-lg shadow-xl lg:w-1/4
+
+        <div style="margin-top:32px; border-width: 2px;border-color:#01ABE4;" class="p-4 mx-4 rounded-lg shadow-xl lg:w-1/4
           border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center
           items-center">
           <div
@@ -429,7 +452,7 @@
             <p class="leading-relaxed text-base">Secara umum, definisi cloud computing (komputasi awan) merupakan
               gabungan pemanfaatan teknologi komputer (komputasi) dalam suatu jaringan dengan pengembangan berbasis
               internet (awan).</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a target=”_blank” class="mt-3 text-indigo-500 inline-flex items-center"
               href="https://id.wikipedia.org/wiki/Komputasi_awan">Selengkapnya
               <svg stroke="#52aecf" fill="#52aecf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -438,7 +461,7 @@
             </a>
           </div>
         </div>
-        <div style="margin-top:32px; border-width: 3px;border-color:#01ABE4;"
+        <div style="margin-top:32px; border-width: 2px;border-color:#01ABE4;"
           class="p-4 mx-4 rounded-lg  shadow-xl lg:w-1/4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden md:w-full flex flex-col text-center items-center">
           <div
             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
@@ -505,7 +528,7 @@
             <p class="leading-relaxed text-base">Internet of Things (IoT) adalah sebuah konsep dimana sebuah objek
               tertentu memiliki kemampuan untuk mengirimkan data lewat melalui jaringan dan tanpa adanya interaksi dari
               manusia ke manusia ataupun dari manusia ke perangkat komputer.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a target=”_blank” class="mt-3 text-indigo-500 inline-flex items-center"
               href="https://en.m.wikipedia.org/wiki/Internet_of_things">Selengkapnya
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -520,15 +543,19 @@
   </section>
   <!-- YANG DIPELAJARI -->
 
-  <section id="prospek" style="background-color: #F1F4F8;" class="mt-10 text-gray-600 body-font">
-    <div class="text-center pt-12">
-      <h1 class="sm:text-3xl text-4xl font-medium title-font judul-gradient mb-4">Prospek Kerja
+  <section id="prospek" style="background-color: #F1F4F8;" class="mt-10 text-gray-600 tu body-font">
+    <div data-aos="zoom-in-up" data-aos-offset="-50" data-aos-delay="5" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="uj"
+      class="uj text-center pt-12">
+      <h1 class="sm:text-3xl text-4xl font-semibold title-font text-gray-900 mb-4">PROSPEK KERJA JURUSAN SIJA
       </h1>
       <div class="flex mt-6 justify-center">
         <div class="w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
       </div>
     </div>
-    <div class="container px-5 pb-16 pt-12 mx-auto flex flex-wrap">
+    <div data-aos="zoom-in-up" data-aos-offset="20" data-aos-delay="10" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="ujo"
+      class="container px-5 pb-16 ujo pt-12 mx-auto flex flex-wrap">
       <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -666,16 +693,29 @@
       </div>
     </div>
   </section>
+
   <section style="background-color: #01ABE4;" class="text-gray-600 body-font">
-    <div class="text-white container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="mx-auto lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+    <div class="container">
+      <div data-aos="zoom-in-up" data-aos-offset="-50" data-aos-delay="5" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="uj"
+        class="uj text-center pt-12">
+        <h1 class="text-white sm:text-3xl text-4xl text-center font-semibold title-font mb-4">TERTARIK MASUK
+          JURUSAN SIJA
+          DI STEMBAYO?
+        </h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-24 h-1 rounded-full bg-blue-me inline-flex"></div>
+        </div>
+      </div>
+      <div class="text-white py-8 container px-5 md:py-16 mx-auto flex flex-wrap">
+        <div class="mx-auto lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 mb-12 sm:mt-0">
         <img class="mx-auto object-cover object-center w-2/3 h-2/3" src="assets/images/Logo_SMKN_2_Depok.png"
           alt="logo sija">
       </div>
       <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
         <div class="w-full sm:p-4 px-4 mb-6">
-          <h1 class="title-font font-semibold text-4xl mb-4 text-white ">Visi & Misi SIJA STEMBAYO</h1>
-          <p class="text-white">Dengan jurusan SIJA ini diharapkan mampu membekali peserta didik dengan
+          <h1 class="title-font font-medium  text-3xl mb-4 text-white">Visi & Misi SIJA STEMBAYO</h1>
+          <p class="text-base text-white">Dengan jurusan SIJA ini diharapkan mampu membekali peserta didik dengan
             ketrampilan,
             pengetahuan dan sikap yang luhur agar kompeten dalam dunia kerja baik secara mandiri atau dalam DU/DI
             sebagai
@@ -701,7 +741,9 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
+
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
@@ -1046,6 +1088,11 @@
   <script src="assets/js/main.js"></script>
   <!-- alpine js -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <!-- transition -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
