@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
+
 .loader-blue {
     position: fixed;
     left: 0px;
@@ -12,6 +13,7 @@
     z-index: 9999;
     background: #ffffff url(../images/preloader1.gif) center no-repeat;
   }
+
 
 
  .sija-gradient{
