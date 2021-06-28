@@ -1,3 +1,15 @@
+// preloader
+jQuery(document).ready(function ($) {
+  $(window).load(function () {
+    setTimeout(function () {
+      $('#preloader').fadeOut('slow', function () {
+      });
+    }, 100);
+    AOS.init();
+  });
+});
+
+
 $(function () {
   ("use strict");
 
@@ -69,3 +81,4 @@ $(function () {
     }
   });
 });
+
