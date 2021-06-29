@@ -4,8 +4,8 @@ jQuery(document).ready(function ($) {
     setTimeout(function () {
       $('#preloader').fadeOut('slow', function () {
       });
-    }, 2000);
-
+    }, 100);
+    AOS.init();
   });
 });
 
@@ -53,7 +53,7 @@ $(function () {
     if (scroll == 0) {
       $(".navbar-nav .nav-item a").addClass("text-putih");
       $(".navbar-nav .nav-item a").removeClass("text-black");
-      $(".sija").removeClass("sija-gradient");
+      $(".sija").removeClass("juduls-gradient");
       $(".sija").addClass("sija-putih");
     }
   });

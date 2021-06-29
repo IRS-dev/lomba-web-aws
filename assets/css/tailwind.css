@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 
@@ -48,11 +46,14 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
 }
 
 body {
   margin: 0;
   zoom: 90%;
+  overflow-x: hidden;
+
 }
 
 main {
@@ -1097,9 +1098,10 @@ p {
   color: rgba(255, 255, 255, var(--text-opacity));
 
   --bg-opacity: 1;
-  background-color:#52aecf;
+  background-color:#30c4fa;
   border-radius: 9999px;
 }
+
 
 .main-btn:hover {
   --bg-opacity: 1;
